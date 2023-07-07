@@ -21,8 +21,10 @@ fetch('https://striveschool-api.herokuapp.com/api/product/', {
       productItem.classList.add('col', 'mt-5');
       productItem.innerHTML = `
         <div class="card    text-bg-dark border-success h-100 " >
-          <img src="${product.imageUrl}" class="card-img-top " alt="${product.name}">
-          <div class="card-body  d-flex flex-column align-items-center justify-content-end">
+          <img src="${product.imageUrl}" class="card-img-top h-50 "
+           
+           alt="${product.name}">
+          <div class="card-body  d-flex flex-column align-items-center justify-content-evenly">
             <h3 class="card-title">${product.name}</h3>
             <h5>${product.brand}</h5>
             <div class= "d-flex align-items-center"> 
