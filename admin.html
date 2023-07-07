@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tech finds ADMIN</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-body-secondary">
+    <nav class="navbar navbar-expand-lg bg-black">
+      <div class="container-fluid">
+        <a class="navbar-brand text-success fs-3" href="#">Tech Finds</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a
+                class="nav-link text-success fs-5"
+                aria-current="page"
+                href="index.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fs-5" href="#">Contacts</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-success fs-5"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Account
+              </a>
+              <ul class="dropdown-menu bg-success-subtle">
+                <li><a class="dropdown-item" href="#">Login</a></li>
+                <li><a class="dropdown-item" href="#"> Manage account </a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li>
+                  <a class="dropdown-item" href="admin.html">Admin</a>
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fs-5" href="cart.html">Cart</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <form id="productForm" class="w-50 mx-auto mt-5 py-3">
+        <div class="mb-3">
+          <label class="form-label">Name</label>
+          <input id="name" type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Description</label>
+          <input id="description" type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Brand</label>
+          <input id="brand" type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">ImageURL</label>
+          <input id="immagine" type="text" class="form-control" />
+        </div>
+        <div class="mb-3">
+          <label class="form-label">Price</label>
+          <input id="price" type="text" class="form-control" />
+        </div>
+        <button type="submit" id="button" class="btn btn-success mt-2">
+          Crea Prodotto
+        </button>
+      </form>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="admin.js"></script>
+  </body>
+</html>
