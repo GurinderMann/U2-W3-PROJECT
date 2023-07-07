@@ -8,7 +8,7 @@ const addressBarContent = new URLSearchParams(location.search);
 const productId = addressBarContent.get('id');
 console.log('product', productId);
 
-// if there is a product id change the innertext of the button
+// verify if there is a id
 if (productId) {
   document.getElementById('button').innerText = 'Modifica';
 
@@ -27,6 +27,7 @@ if (productId) {
         throw new Error('Cannot find product with the given ID');
       }
     })
+
     // put the value inside the form 
     .then(details => {
       document.getElementById('name').value = details.name;
